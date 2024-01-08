@@ -9,15 +9,17 @@
         "cms"
     ],
     "license": "MIT",
-    "authors": [{
-        "name": "LeKoala",
-        "email": "thomas@lekoala.be"
-    }],
+    "authors": [
+        {
+            "name": "LeKoala",
+            "email": "thomas@lekoala.be"
+        }
+    ],
     "require": {
-        "php": ">=8",
-        "silverstripe/framework": "^4.0",
-        "silverstripe/cms": "^4.0",
-        "symbiote/silverstripe-gridfieldextensions": "^3.2",
+        "php": ">=8.1",
+        "silverstripe/framework": "5@stable",
+        "silverstripe/cms": "5@stable",
+        "symbiote/silverstripe-gridfieldextensions": "^4.0",
         "pelago/emogrifier": "^6.0",
         "mailgun/mailgun-php": "^3.0",
         "kriswallsmith/buzz": "^1.0",
@@ -51,5 +53,12 @@
         "lint-clean": "phpcbf src/ tests/"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "php-http/discovery": true,
+            "silverstripe/vendor-plugin": true
+        }
+    }
 }
