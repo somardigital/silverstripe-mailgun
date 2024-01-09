@@ -3,6 +3,7 @@
 namespace LeKoala\Mailgun;
 
 use \Exception;
+use SilverStripe\Control\HTTPResponse;
 use SilverStripe\Forms\Tab;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\TabSet;
@@ -114,7 +115,7 @@ class MailgunAdmin extends LeftAndMain implements PermissionProvider
         }
     }
 
-    public function index($request)
+    public function index($request): HTTPResponse
     {
         return parent::index($request);
     }
